@@ -14,23 +14,17 @@ function App() {
           <a href="http://google.com.tw">test</a>
         </h1>
         <h2>this is variable h2</h2>
-        <table>
-          <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-          </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
-        </table>
+
+        <ul>
+          <li>
+            first li <span>this is span, smaller than li</span>
+          </li>
+          <li>second li</li>
+          <li>
+            third with <a href="https://google.com.tw">link!</a>
+          </li>
+        </ul>
+        <h4>hi</h4>
       </header>
     </div>
   );
