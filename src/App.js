@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import "./MyFirstSass.sass";
-import "./main.sass";
-import "./nesting.sass";
+import "./assets/sass/MyFirstSass.sass";
+import "./assets/sass/main.sass";
+import "./assets/sass/nestingError.sass";
 
 function App() {
   return (
@@ -22,6 +22,9 @@ function App() {
           <li>second li</li>
           <li>
             third with <a href="https://google.com.tw">link!</a>
+          </li>
+          <li>
+            forth with label <label>hi this is label</label>
           </li>
         </ul>
         <h4>hi</h4>
