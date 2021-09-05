@@ -1,14 +1,20 @@
 import "./App.css";
-import "./assets/sass/module.sass";
-
+import "./assets/sass/extend.sass";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div>
-          cloud cloud cloud <label>sun</label> cloud
-          <br /> cloud cloud cloud
-          <p>mud mud mud</p>
+          <div className="normal-fish">ζ°)))彡</div>
+          <div className="fat-fish">ζ°)))彡</div>
+          <div className="small-fish">ζ°)))彡</div>
+          <div className="small-fish">ζ°)))彡</div>
+          <div className="small-fish">ζ°)))彡</div>
+          <div className="normal-fish">ζ°)))彡</div>
+          <div className="small-fish">ζ°)))彡</div>
+          <div className="fat-fish">ζ°)))彡</div>
+          <div className="normal-fish">ζ°)))彡</div>
+          <div className="small-fish">ζ°)))彡</div>
         </div>
       </header>
     </div>

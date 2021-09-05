@@ -1,0 +1,20 @@
+
+%fish-size
+    min-width: 20px
+    min-height: 10px
+    color: yellow
+    margin: 20px
+    font-style: italic
+.normal-fish
+    @extend %fish-size
+    color: red
+.fat-fish
+    @extend %fish-size
+    color: green
+    font-size: 120px
+    padding-right: 20px
+
+.small-fish
+    @extend %fish-size
+    font-size: 10px
+    padding-left: 20px
