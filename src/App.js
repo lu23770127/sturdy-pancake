@@ -1,22 +1,14 @@
 import "./App.css";
-import "./assets/sass/extend.sass";
+import "./assets/sass/operator.sass";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          <div className="normal-fish">ζ°)))彡</div>
-          <div className="fat-fish">ζ°)))彡</div>
-          <div className="small-fish">ζ°)))彡</div>
-          <div className="small-fish">ζ°)))彡</div>
-          <div className="small-fish">ζ°)))彡</div>
-          <div className="normal-fish">ζ°)))彡</div>
-          <div className="small-fish">ζ°)))彡</div>
-          <div className="fat-fish">ζ°)))彡</div>
-          <div className="normal-fish">ζ°)))彡</div>
-          <div className="small-fish">ζ°)))彡</div>
-        </div>
-      </header>
+      <div className="container">
+        <button>click me !</button>
+        <button className="button-small">click me !</button>
+        <button className="button-small">click me !</button>
+        <button>click me !</button>
+      </div>
     </div>
   );
 }
