@@ -2,7 +2,7 @@
 
 ### 從零開始學 SCSS 三十天
 
-相關文章連載請至 [it鐵人賽中查看](https://google.com.tw/)
+相關文章連載請至 [it鐵人賽](https://google.com.tw/)中查看
 
 預計開賽日期：9/16
 
