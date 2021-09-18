@@ -1,0 +1,39 @@
+
+.header
+    box-shadow: -2px 2px 5px #0000001a
+    border-top: 12px solid $primary-color
+    .top
+        padding: 24px
+    .logo
+        font-size: 100px
+        font-family: $logo-font
+    .menu
+        padding: 16px
+        position: absolute
+        right: 0px
+
+    .dropdown
+        position: relative
+        display: inline-block
+
+    .dropdown-content
+        display: none
+        position: absolute
+        background-color: #f9f9f9
+        min-width: 160px
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+        padding: 12px 16px
+        z-index: 1
+
+        .dropdown:hover &
+            display: block
+
+    .breadcrumb
+
+        border-top: 1px solid #caccce
+        padding: 20px
+        a
+            letter-spacing: 0.2em
+            padding: 8px
+            font-size: 12px
+            font-weight: 900
