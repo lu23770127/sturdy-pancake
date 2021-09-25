@@ -1,0 +1,32 @@
+.dropdown
+    position: relative
+    display: inline-block
+
+    &-content
+        display: none
+        position: absolute
+        right: 10px
+        min-width: 120px
+        background-color: $primary-background-color
+        box-shadow: 0px 8px 16px 0px $gray
+        padding: 12px 16px
+        z-index: 1
+
+    &-label:hover
+        color: $secondary-color
+        cursor: pointer
+
+    ul
+        padding: 8px
+        li
+            list-style-type: none
+            padding: 16px
+            &:hover
+                display: block
+                color: $secondary-color
+
+    .show
+        display: block
+
+    .icon
+        margin-left: 8px
