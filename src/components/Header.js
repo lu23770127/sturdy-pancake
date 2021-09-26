@@ -51,16 +51,16 @@ export default function Header() {
               </div>
             </div>
           </div>
-  <div className="vl"></div>
-  <div className="menu-item">
-    <a href="/">membership</a>
-  </div>
-  <div className="vl"></div>
-  <div className="menu-item">
-    <a href="/">
-      <FontAwesomeIcon className="icon-menu" icon={faBars} size="lg" />
-    </a>
-  </div>
+          <div className="vl"></div>
+          <div className="menu-item">
+            <a href="/">membership</a>
+          </div>
+          <div className="vl"></div>
+          <div className="menu-item">
+            <a href="/">
+              <FontAwesomeIcon className="icon-menu" icon={faBars} size="lg" />
+            </a>
+          </div>
         </label>
       </div>
       <div className="sub-menu">
@@ -71,6 +71,24 @@ export default function Header() {
         <a href="/">LUXURY</a>
         <a href="/">VIDEO</a>
         <a href="/">VOGUE有意識</a>
+      </div>
+      <div class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );
