@@ -3,9 +3,7 @@
 .header
     box-shadow: -2px 2px 5px #0000001a
     border-top: 12px solid $primary-color
-    letter-spacing: 0.1em
-    font-size: $menu-item-font-size
-    font-weight: 900
+    @extend %link-font
 
     .vl
         border-left: 0.5px solid #b6b6b6
@@ -18,9 +16,7 @@
         margin: 4px 24px
 
     .logo
-        font-size: 100px
-        font-weight: 100
-        font-family: $logo-font
+        @extend %logo-font
     .menu
         padding: 0 16px
         position: absolute
