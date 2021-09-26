@@ -26,7 +26,11 @@ export default function Header() {
             <div className="dropdown">
               <label onClick={() => handleOnClick()} className="dropdown-label">
                 <span>Taiwan</span>
-                <FontAwesomeIcon icon={faAngleDown} size="lg" className="icon" />
+                <FontAwesomeIcon
+                  icon={faAngleDown}
+                  size="lg"
+                  className="icon"
+                />
               </label>
               <div
                 className={
@@ -47,14 +51,16 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div className="menu-item">
-            <a href="/">membership</a>
-          </div>
-          <div className="menu-item">
-            <a href="/">
-              <FontAwesomeIcon icon={faBars} size="lg" />
-            </a>
-          </div>
+  <div className="vl"></div>
+  <div className="menu-item">
+    <a href="/">membership</a>
+  </div>
+  <div className="vl"></div>
+  <div className="menu-item">
+    <a href="/">
+      <FontAwesomeIcon className="icon-menu" icon={faBars} size="lg" />
+    </a>
+  </div>
         </label>
       </div>
       <div className="sub-menu">
