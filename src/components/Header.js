@@ -5,10 +5,16 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = React.useState(false);
+  const [modalOpen, setModalOpen] = React.useState(false);
 
-  const handleOnClick = () => {
+  const handleCountryClick = () => {
     setActiveDropdown(!activeDropdown);
   };
+
+  const handleModalClick = () => {
+    setModalOpen(!modalOpen);
+  };
+
   const location = [
     "arabia",
     "australia",
@@ -24,7 +30,10 @@ export default function Header() {
         <label className="menu">
           <div className="menu-item">
             <div className="dropdown">
-              <label onClick={() => handleOnClick()} className="dropdown-label">
+              <label
+                onClick={() => handleCountryClick()}
+                className="dropdown-label"
+              >
                 <span>Taiwan</span>
                 <FontAwesomeIcon
                   icon={faAngleDown}
@@ -57,9 +66,9 @@ export default function Header() {
           </div>
           <div className="vl"></div>
           <div className="menu-item">
-            <a href="/">
+            <label className="modal-button" onClick={() => handleModalClick()}>
               <FontAwesomeIcon className="icon-menu" icon={faBars} size="lg" />
-            </a>
+            </label>
           </div>
         </label>
       </div>
@@ -72,11 +81,11 @@ export default function Header() {
         <a href="/">VIDEO</a>
         <a href="/">VOGUE有意識</a>
       </div>
-      <div class="modal">
+      <div className={modalOpen === true ? "modal show" : "modal"}>
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
+              <div class="modal-title">VOGUE</div>
               <button
                 type="button"
                 class="btn-close"
