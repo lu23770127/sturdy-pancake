@@ -6,12 +6,11 @@
 
 body
     font-family: $sans-font
-    text-transform: uppercase
-
 a
-    color: $primary-color
+    text-transform: uppercase
     text-decoration: none
     hover: hover
+    color: $primary-color
 
 a:hover
     color: $secondary-color
@@ -19,3 +18,7 @@ a:hover
 .container
     color: $primary-color
     background-color: $primary-background-color
+
+::selection
+    background: $secondary-color
+    color: $primary-background-color

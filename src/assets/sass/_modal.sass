@@ -9,12 +9,35 @@
     height: 100%
     background-color: $primary-color
     color: $primary-background-color
+
+    a
+        color: $primary-background-color
+        &:hover
+            color: $secondary-color
+
     .modal-dialog
+        padding: 16px 24px
         .modal-content
             .modal-header
                 .modal-title
-                    .modal-btn-close
+                    @extend %logo-font
+                .close-button
+                    margin: 8px
+                    padding: 16px
+                    position: fixed
+                    top: 0
+                    right: 0
+                    cursor: pointer
             .modal-body
+                color: $primary-background-color
+                .modal-column
+                    width: 33%
+                    display: inline-block
+                    // margin: 24px
+                    // padding: 24px
+
+    ::selection
+        background: $secondary-color
 
 .modal-button:hover
     @extend %hover-style

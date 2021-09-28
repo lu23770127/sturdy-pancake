@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = React.useState(false);
@@ -11,8 +12,8 @@ export default function Header() {
     setActiveDropdown(!activeDropdown);
   };
 
-  const handleModalClick = () => {
-    setModalOpen(!modalOpen);
+  const handleModalClick = (status) => {
+    setModalOpen(status);
   };
 
   const location = [
@@ -66,7 +67,10 @@ export default function Header() {
           </div>
           <div className="vl"></div>
           <div className="menu-item">
-            <label className="modal-button" onClick={() => handleModalClick()}>
+            <label
+              className="modal-button"
+              onClick={() => handleModalClick(true)}
+            >
               <FontAwesomeIcon className="icon-menu" icon={faBars} size="lg" />
             </label>
           </div>
@@ -82,18 +86,30 @@ export default function Header() {
         <a href="/">VOGUE有意識</a>
       </div>
       <div className={modalOpen === true ? "modal show" : "modal"}>
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="modal-title">VOGUE</div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <div className="modal-title">VOGUE</div>
+              <label
+                className="close-button"
+                onClick={() => handleModalClick(false)}
+              >
+                <FontAwesomeIcon icon={faTimes} size="3x" />
+              </label>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
+              <div className="modal-column">
+                <a href="/">membership</a>
+                <a href="/">vogue shop</a>
+              </div>
+              <div className="modal-column">
+                <a href="/">membership</a>
+                <a href="/">vogue shop</a>
+              </div>
+              <div className="modal-column">
+                <a href="/">membership</a>
+                <a href="/">vogue shop</a>
+              </div>
               <p>Modal body text goes here.</p>
             </div>
           </div>
