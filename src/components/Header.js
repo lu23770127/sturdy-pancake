@@ -24,6 +24,25 @@ export default function Header() {
     "china",
     "czechoslovakia",
   ];
+
+  const secondaryMenu = [
+    "fashion",
+    "beauty",
+    "entertainment",
+    "lifestyle",
+    "luxury",
+    "video",
+    "Vogue有意識",
+  ];
+
+  const info = [
+    "秀場圖輯 RUNWAY SHOW",
+    "可能研究所",
+    "美人會部落格",
+    "風格達人",
+    "評美時尚客",
+    "活動快報",
+  ];
   return (
     <nav className="header">
       <div className="top">
@@ -77,13 +96,9 @@ export default function Header() {
         </label>
       </div>
       <div className="sub-menu">
-        <a href="/">FASHION</a>
-        <a href="/">BEAUTY</a>
-        <a href="/">ENTERTAINMENT</a>
-        <a href="/">LIFESTYLE</a>
-        <a href="/">LUXURY</a>
-        <a href="/">VIDEO</a>
-        <a href="/">VOGUE有意識</a>
+        {secondaryMenu.map(function (item) {
+          return <a href="/">{item}</a>;
+        })}
       </div>
       <div className={modalOpen === true ? "modal show" : "modal"}>
         <div className="modal-dialog">
@@ -104,12 +119,26 @@ export default function Header() {
                 <a href="/">vogue shop</a>
               </div>
               <div className="modal-column">
-                <a href="/">membership</a>
-                <a href="/">vogue shop</a>
+                {secondaryMenu.map(function (item) {
+                  return (
+                    <div>
+                      <a className="logo-font" href="/">
+                        {item}
+                      </a>
+                      <hr />
+                    </div>
+                  );
+                })}
               </div>
               <div className="modal-column">
-                <a href="/">membership</a>
-                <a href="/">vogue shop</a>
+                {info.map(function (item) {
+                  return (
+                    <div>
+                      <a href="/">{item}</a>
+                      <hr />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

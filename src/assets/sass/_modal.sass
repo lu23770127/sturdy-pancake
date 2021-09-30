@@ -6,7 +6,7 @@
     left: 0
     display: none
     width: 100%
-    height: 100%
+    overflow: auto
     background-color: $primary-color
     color: $primary-background-color
     .modal-dialog
@@ -26,7 +26,9 @@
                 color: $primary-background-color
                 padding: 8px
                 .modal-column
-                    border-top: 1px solid $primary-background-color
+                    display: table-cell
+                    vertical-align: top
+                    border-top: 1.5px solid $primary-background-color
                     width: 29vw
                     display: inline-block
                     margin: 16px
@@ -36,6 +38,19 @@
                         color: $primary-background-color
                         &:hover
                             color: $secondary-color
+
+                    hr
+                        border: none
+                        height: 1px
+                        color: $darker-gray
+                        background-color: $darker-gray
+
+                    .logo-font
+                        font-family: $logo-font
+                        font-size: 48px
+                        font-weight: 300
+                        text-transform: capitalize
+
     ::selection
         background: $secondary-color
 .modal-button:hover
