@@ -6,7 +6,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = React.useState(false);
-  const [modalOpen, setModalOpen] = React.useState(false);
+  const [modalOpen, setModalOpen] = React.useState(true);
 
   const handleCountryClick = () => {
     setActiveDropdown(!activeDropdown);
@@ -100,6 +100,7 @@ export default function Header() {
             <div className="modal-body">
               <div className="modal-column">
                 <a href="/">membership</a>
+                <hr />
                 <a href="/">vogue shop</a>
               </div>
               <div className="modal-column">
@@ -110,7 +111,6 @@ export default function Header() {
                 <a href="/">membership</a>
                 <a href="/">vogue shop</a>
               </div>
-              <p>Modal body text goes here.</p>
             </div>
           </div>
         </div>

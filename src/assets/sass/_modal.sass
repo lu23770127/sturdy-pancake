@@ -9,12 +9,6 @@
     height: 100%
     background-color: $primary-color
     color: $primary-background-color
-
-    a
-        color: $primary-background-color
-        &:hover
-            color: $secondary-color
-
     .modal-dialog
         padding: 16px 24px
         .modal-content
@@ -30,17 +24,21 @@
                     cursor: pointer
             .modal-body
                 color: $primary-background-color
+                padding: 8px
                 .modal-column
-                    width: 33%
+                    border-top: 1px solid $primary-background-color
+                    width: 29vw
                     display: inline-block
-                    // margin: 24px
-                    // padding: 24px
-
+                    margin: 16px
+                    a
+                        padding: 16px 0
+                        display: block
+                        color: $primary-background-color
+                        &:hover
+                            color: $secondary-color
     ::selection
         background: $secondary-color
-
 .modal-button:hover
     @extend %hover-style
-
 .show
     display: block
