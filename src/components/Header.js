@@ -100,50 +100,50 @@ export default function Header() {
           return <a href="/">{item}</a>;
         })}
       </div>
-      <div className={modalOpen === true ? "modal show" : "modal"}>
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-header">
-              <div className="modal-title">VOGUE</div>
-              <label
-                className="close-button"
-                onClick={() => handleModalClick(false)}
-              >
-                <FontAwesomeIcon icon={faTimes} size="3x" />
-              </label>
-            </div>
-            <div className="modal-body">
-              <div className="modal-column">
-                <a href="/">membership</a>
-                <hr />
-                <a href="/">vogue shop</a>
-              </div>
-              <div className="modal-column">
-                {secondaryMenu.map(function (item) {
-                  return (
-                    <div>
-                      <a className="logo-font" href="/">
-                        {item}
-                      </a>
-                      <hr />
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="modal-column">
-                {info.map(function (item) {
-                  return (
-                    <div>
-                      <a href="/">{item}</a>
-                      <hr />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+  <div className={modalOpen === true ? "modal show" : "modal"}>
+    <div className="modal-dialog">
+      <div className="modal-content">
+        <div className="modal-header">
+          <div className="modal-title">VOGUE</div>
+          <label
+            className="close-button"
+            onClick={() => handleModalClick(false)}
+          >
+            <FontAwesomeIcon icon={faTimes} size="3x" />
+          </label>
+        </div>
+        <div className="modal-body">
+          <div className="modal-column">
+            <a href="/">membership</a>
+            <hr />
+            <a href="/">vogue shop</a>
+          </div>
+          <div className="modal-column">
+            {secondaryMenu.map(function (item) {
+              return (
+                <div>
+                  <a className="logo-font" href="/">
+                    {item}
+                  </a>
+                  <hr />
+                </div>
+              );
+            })}
+          </div>
+          <div className="modal-column">
+            {info.map(function (item) {
+              return (
+                <div>
+                  <a href="/">{item}</a>
+                  <hr />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
+    </div>
+  </div>
     </nav>
   );
 }
