@@ -26,30 +26,52 @@
             .modal-body
                 color: $primary-background-color
                 padding: 8px
-                .modal-column
-                    vertical-align: top
-                    border-top: 1.5px solid $primary-background-color
-                    width: 29vw
-                    display: inline-block
-                    margin: 16px
-                    a
-                        padding: 16px 0
-                        display: block
-                        color: $primary-background-color
-                        &:hover
-                            color: $secondary-color
+.modal-column
+    vertical-align: top
+    border-top: 1.5px solid $primary-background-color
+    width: 29vw
+    display: inline-block
+    margin: 16px
+    a
+        padding: 16px 0
+        display: block
+        color: $primary-background-color
+        &:hover
+            color: $secondary-color
 
-                    hr
-                        border: none
-                        height: 1px
-                        color: $darker-gray
-                        background-color: $darker-gray
+    hr
+        border: none
+        height: 1px
+        color: $darker-gray
+        background-color: $darker-gray
 
-                    .logo-font
-                        font-family: $logo-font
-                        font-size: 48px
-                        font-weight: 300
-                        text-transform: capitalize
+    .logo-font
+        font-family: $logo-font
+        font-size: 48px
+        font-weight: 300
+        text-transform: capitalize
+
+    .follow-us
+        color: $dark-gray
+        text-transform: uppercase
+        border-top: 1px solid $primary-background-color
+        padding-top: 8px
+        margin-top: 32px
+
+    .social-media
+        width: 20px
+        height: 20px
+        display: inline-block
+        border-radius: 60px
+        border: 1px solid $darker-gray
+        padding: 13px
+        margin: 13px 13px 13px 0
+
+        &:hover
+            color: $secondary-color
+            border: 1px solid $secondary-color
+            cursor: pointer
+            transition: 0.3s
 
     ::selection
         background: $secondary-color
