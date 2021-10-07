@@ -15,9 +15,10 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+
 export default function Header() {
   const [activeDropdown, setActiveDropdown] = React.useState(false);
-  const [modalOpen, setModalOpen] = React.useState(true);
+  const [modalOpen, setModalOpen] = React.useState(false);
 
   const handleCountryClick = () => {
     setActiveDropdown(!activeDropdown);

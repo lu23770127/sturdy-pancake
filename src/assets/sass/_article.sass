@@ -1,0 +1,54 @@
+// article.sass
+
+.ads
+    padding: 24px
+    text-align: center
+    background-color: $gray
+
+    img
+        max-height: 150px
+.banner
+    padding: 0 5vw
+    border-top: 1px solid $primary-color
+    @extend %link-font
+    font-weight: 100
+
+    &-headline
+        width: 17vw
+        border-top: 10px solid $primary-color
+        margin: 0
+        margin-right: auto
+        padding: 0
+        font-family: $logo-font
+        font-size: 64px
+        font-weight: 200
+        text-transform: capitalize
+
+    &-img-wrapper
+        width: 90vw
+        height: 700px
+        overflow: hidden
+        margin-top: 64px
+        background-color: $secondary-color
+
+    &-img
+        max-width: 90vw
+
+        &:hover
+            color: $dark-gray
+            cursor: pointer
+            transition: .1s ease
+
+    &-body
+        margin: 0 0 0 240px
+        border-left: 1px solid $primary-color
+        padding: 32px 200px 0 64px
+
+        &:hover
+            color: $dark-gray
+            cursor: pointer
+
+    &-title
+        @extend %logo-font
+        font-size: 48px
+        padding: 16px 0
