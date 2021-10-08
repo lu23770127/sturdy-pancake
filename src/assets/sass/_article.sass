@@ -1,5 +1,4 @@
 // article.sass
-
 .ads
     padding: 24px
     text-align: center
@@ -8,14 +7,20 @@
     img
         max-height: 150px
         max-width: 90vw
-.banner
+.post
     padding: 0 5vw
     border-top: 1px solid $primary-color
     @extend %link-font
     font-weight: 100
 
+    img
+        &:hover
+            cursor: pointer
+            transition: .5s ease
+            filter: url(#red-filter)
+
     &-headline
-        width: 17vw
+        width: 20vw
         border-top: 10px solid $primary-color
         margin: 0
         margin-right: auto
@@ -35,14 +40,8 @@
     &-img
         max-width: 90vw
 
-        &:hover
-            color: $dark-gray
-            cursor: pointer
-            transition: .1s ease
-            filter: url(#dabadee)
-
     &-body
-        margin: 0 0 0 240px
+        margin: 0 0 64px 200px
         border-left: 1px solid $primary-color
         padding: 32px 200px 0 64px
 
