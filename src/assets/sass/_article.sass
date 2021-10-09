@@ -15,6 +15,7 @@
     font-weight: 100
 
     img
+        width: 100%
         &:hover
             cursor: pointer
             transition: .5s ease
@@ -53,7 +54,6 @@
         justify-content: space-between
 
     &-column
-        justify-content: space-between
         width: (100vw-20vw)/4
         display: inline-block
         overflow: hidden
@@ -98,10 +98,47 @@
     width: 40px
     &:hover
         border-top: 5px solid $secondary-color
+.white-hr
+    margin: 24px 0
+    border-top: 5px solid $primary-background-color
+    width: 72px
+    &:hover
+        border-top: 5px solid $secondary-color
 
 .more-info
-    text-align: right
+    text-align: center
     margin: auto
+    border-top: 2px solid $gray
+
 button
+    cursor: pointer
     border: none
     background-color: $primary-background-color
+    margin: 8px 32px
+    padding: 32px
+    text-transform: uppercase
+    @extend %link-font
+    .red-icon
+        color: $primary-background-color
+        background-color: $secondary-color
+        border-radius: 50%
+        padding: 16px 18px
+        margin: 16px
+    &:hover
+        color: $secondary-color
+
+.left-side
+    width: (100vw-10vw)/2
+    justify-content: center
+    .overlay-content
+        // @extend %logo-font
+        color: $primary-background-color
+        position: relative
+        bottom: 380px
+        left: 0
+        padding: 20px 24px 40px
+        font-weight: bold
+
+.right-side
+    width: (100vw-10vw)/2
+    padding-left: 24px
