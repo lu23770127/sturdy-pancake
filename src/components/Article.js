@@ -1,6 +1,8 @@
 // Post.js
 
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Article() {
   return (
@@ -52,19 +54,78 @@ export default function Article() {
       </div>
       <div className="post">
         <h2 className="post-headline">attention</h2>
-        <div className="post-img-wrapper">
-          <img
-            className="post-img"
-            alt="post-img"
-            src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-          />
-        </div>
-        <div className="post-body">
-          ENTERTAINMENT
-          <div className="post-title">
-            寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+        <div className="post-section">
+          <div className="post-column">
+            <div className="rectangle-img">
+              <img
+                alt="post-img"
+                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
+              />
+            </div>
+            <div className="post-paper">
+              ENTERTAINMENT
+              <div className="post-subtitle">
+                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+              </div>
+              <hr className="brown-hr" />
+              BY NICOLE LEE 2021年6月7日
+            </div>
           </div>
-          BY NICOLE LEE 2021年6月7日
+          <div className="post-column">
+            <div className="square-img">
+              <img
+                alt="post-img"
+                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
+              />
+            </div>
+            <div className="post-paper">
+              ENTERTAINMENT
+              <div className="post-subtitle">
+                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+              </div>
+              <hr className="brown-hr" />
+              BY NICOLE LEE 2021年6月7日
+            </div>
+          </div>
+          <div className="post-column">
+            <div className="rectangle-img">
+              <img
+                alt="post-img"
+                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
+              />
+            </div>
+            <div className="post-paper">
+              ENTERTAINMENT
+              <div className="post-subtitle">
+                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+              </div>
+              <hr className="brown-hr" />
+              BY NICOLE LEE 2021年6月7日
+            </div>
+          </div>
+          <div className="post-column">
+            <div className="square-img">
+              <img
+                alt="post-img"
+                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
+              />
+            </div>
+            <div className="post-paper">
+              ENTERTAINMENT
+              <div className="post-subtitle">
+                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+              </div>
+              <hr className="brown-hr" />
+              BY NICOLE LEE 2021年6月7日
+            </div>
+          </div>
+        </div>
+        <div className="more-info">
+          <button>
+            more info
+            <br />
+            <FontAwesomeIcon icon={faChevronRight} className="social-media" />
+          </button>
         </div>
       </div>
     </div>
