@@ -5,6 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Article() {
+  const articleData = {
+    category: "ENTERTAINMENT",
+    title: " 寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」",
+    writer: "NICOLE LEE",
+    dateTime: "2021年6月7日",
+    img: "https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg",
+  };
   return (
     <div>
       <div className="ads">
@@ -37,11 +44,10 @@ export default function Article() {
           </svg>
         </div>
         <div className="post-body">
-          ENTERTAINMENT
-          <div className="post-title">
-            寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
-          </div>
-          BY NICOLE LEE 2021年6月7日
+          {articleData.category}
+          <div className="post-title">{articleData.title}</div>
+          BY {articleData.writer}
+          {articleData.dateTime}
         </div>
       </div>
       <div className="ads">
@@ -57,66 +63,50 @@ export default function Article() {
         <div className="post-section">
           <div className="post-column">
             <div className="rectangle-img">
-              <img
-                alt="post-img"
-                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-              />
+              <img alt="post-img" src={articleData.img} />
             </div>
             <div className="post-paper">
-              ENTERTAINMENT
-              <div className="post-subtitle">
-                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
-              </div>
+              {articleData.category}
+              <div className="post-subtitle">{articleData.title}</div>
               <hr className="brown-hr" />
-              BY NICOLE LEE 2021年6月7日
+              BY {articleData.writer}
+              {articleData.dateTime}
             </div>
           </div>
           <div className="post-column">
             <div className="square-img">
-              <img
-                alt="post-img"
-                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-              />
+              <img alt="post-img" src={articleData.img} />
             </div>
             <div className="post-paper">
-              ENTERTAINMENT
-              <div className="post-subtitle">
-                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
-              </div>
+              {articleData.category}
+              <div className="post-subtitle">{articleData.title}</div>
               <hr className="brown-hr" />
-              BY NICOLE LEE 2021年6月7日
+              BY {articleData.writer}
+              {articleData.dateTime}
             </div>
           </div>
           <div className="post-column">
             <div className="rectangle-img">
-              <img
-                alt="post-img"
-                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-              />
+              <img alt="post-img" src={articleData.img} />
             </div>
             <div className="post-paper">
-              ENTERTAINMENT
-              <div className="post-subtitle">
-                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
-              </div>
+              {articleData.category}
+              <div className="post-subtitle">{articleData.title}</div>
               <hr className="brown-hr" />
-              BY NICOLE LEE 2021年6月7日
+              BY {articleData.writer}
+              {articleData.dateTime}
             </div>
           </div>
           <div className="post-column">
             <div className="square-img">
-              <img
-                alt="post-img"
-                src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-              />
+              <img alt="post-img" src={articleData.img} />
             </div>
             <div className="post-paper">
-              ENTERTAINMENT
-              <div className="post-subtitle">
-                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
-              </div>
+              {articleData.category}
+              <div className="post-subtitle">{articleData.title}</div>
               <hr className="brown-hr" />
-              BY NICOLE LEE 2021年6月7日
+              BY {articleData.writer}
+              {articleData.dateTime}
             </div>
             <div className="more-info">
               <button>
@@ -129,53 +119,117 @@ export default function Article() {
         </div>
       </div>
       <div className="post">
-        <h2 className="post-headline">attention</h2>
+        <h2 className="post-headline">fashion</h2>
         <div className="post-section">
           <div className="left-side">
-            <img
-              src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-              alt="img"
-            />
+            <img src={articleData.img} alt="img" />
             <div className="overlay-content">
-              ENTERTAINMENT
-              <div className="post-title">
-                寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
-              </div>
+              {articleData.category}
+              <div className="post-title">{articleData.title}</div>
               <hr className="white-hr" />
-              BY NICOLE LEE 2021年6月7日
+              BY {articleData.writer}
+              {articleData.dateTime}
             </div>
           </div>
           <div className="right-side">
-            <div className="post-column">
-              <div className="rectangle-img">
-                <img
-                  alt="post-img"
-                  src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-                />
-              </div>
-              <div className="post-paper">
-                ENTERTAINMENT
-                <div className="post-subtitle">
-                  寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+            <div className="row">
+              <div className="post-column">
+                <div className="square-img">
+                  <img alt="post-img" src={articleData.img} />
                 </div>
-                <hr className="brown-hr" />
-                BY NICOLE LEE 2021年6月7日
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
+              </div>
+              <div className="post-column">
+                <div className="rectangle-img">
+                  <img alt="post-img" src={articleData.img} />
+                </div>
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
+              </div>
+              <div className="post-column">
+                <div className="square-img">
+                  <img alt="post-img" src={articleData.img} />
+                </div>
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
+              </div>
+              <div className="post-column">
+                <div className="rectangle-img">
+                  <img alt="post-img" src={articleData.img} />
+                </div>
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
               </div>
             </div>
-            <div className="post-column">
-              <div className="square-img">
-                <img
-                  alt="post-img"
-                  src="https://media.vogue.com.tw/photos/60b9a4fcf37df9e2f39b0216/2:3/w_2880%2cc_limit/29711-1_V.jpg"
-                />
-              </div>
-              <div className="post-paper">
-                ENTERTAINMENT
-                <div className="post-subtitle">
-                  寶藏男孩持修：「對我來說男子氣概無關外表，而是要負責任。」
+            <div className="row">
+              <div className="post-column">
+                <div className="rectangle-img">
+                  <img alt="post-img" src={articleData.img} />
                 </div>
-                <hr className="brown-hr" />
-                BY NICOLE LEE 2021年6月7日
+                <div className="post-paper">
+                  {/* {articleData.category} */}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
+              </div>
+              <div className="post-column">
+                <div className="square-img">
+                  <img alt="post-img" src={articleData.img} />
+                </div>
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
+              </div>
+              <div className="post-column">
+                <div className="rectangle-img">
+                  <img alt="post-img" src={articleData.img} />
+                </div>
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
+              </div>
+              <div className="post-column">
+                <div className="square-img">
+                  <img alt="post-img" src={articleData.img} />
+                </div>
+                <div className="post-paper">
+                  {articleData.category}
+                  <div className="post-subtitle">{articleData.title}</div>
+                  <hr className="brown-hr" />
+                  BY {articleData.writer}
+                  {articleData.dateTime}
+                </div>
               </div>
             </div>
           </div>

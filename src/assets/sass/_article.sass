@@ -52,9 +52,37 @@
     &-section
         display: flex
         justify-content: space-between
+        gap: 2.4vw
+
+        .left-side
+            width: (100vw-10vw)/2
+            justify-content: center
+            height: 100vh
+            overflow: hidden
+
+            .overlay-content
+                color: $primary-background-color
+                position: relative
+                bottom: 410px
+                left: 0
+                padding: 20px 24px 40px
+                font-weight: bold
+
+        .right-side
+            width: (100vw-10vw)/2
+            height: 100vh
+            display: flex
+            overflow: scroll
+            gap: 2.9vw
+            overflow-x: hidden
+            scrollbar-width: none
+
+            .row
+                flex: 1
+                width: (100vw-60vw)/2
 
     &-column
-        width: (100vw-20vw)/4
+        width: (100vw-16vw)/4
         display: inline-block
         overflow: hidden
 
@@ -126,19 +154,3 @@ button
         margin: 16px
     &:hover
         color: $secondary-color
-
-.left-side
-    width: (100vw-10vw)/2
-    justify-content: center
-    .overlay-content
-        // @extend %logo-font
-        color: $primary-background-color
-        position: relative
-        bottom: 380px
-        left: 0
-        padding: 20px 24px 40px
-        font-weight: bold
-
-.right-side
-    width: (100vw-10vw)/2
-    padding-left: 24px
