@@ -38,7 +38,7 @@ export default function Footer() {
           EDITION
           <button>
             TAIWAN
-            <FontAwesomeIcon icon={faAngleDown} size="lg" className="icon" />
+            <FontAwesomeIcon icon={faAngleDown} size="lg" />
           </button>
         </div>
         <div className="dark-gray">
