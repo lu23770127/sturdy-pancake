@@ -67,11 +67,7 @@ export default function Header() {
                 className="dropdown-label"
               >
                 <span>Taiwan</span>
-                <FontAwesomeIcon
-                  icon={faAngleDown}
-                  size="lg"
-                  className="icon"
-                />
+                <FontAwesomeIcon icon={faAngleDown} size="lg" />
               </label>
               <div
                 className={
@@ -151,10 +147,28 @@ export default function Header() {
                   );
                 })}
                 <div className="follow-us">follow us</div>
-                <FontAwesomeIcon icon={faFacebookF} className="social-media" />
-                <FontAwesomeIcon icon={faInstagram} className="social-media" />
-                <FontAwesomeIcon icon={faYoutube} className="social-media" />
-                <FontAwesomeIcon icon={faShareAlt} className="social-media" />
+                <div className="icon">
+                  <div class="icon-box">
+                    <div class="icon-wrapper">
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </div>
+                  </div>
+                  <div class="icon-box">
+                    <div class="icon-wrapper">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </div>
+                  </div>
+                  <div class="icon-box">
+                    <div class="icon-wrapper">
+                      <FontAwesomeIcon icon={faYoutube} />
+                    </div>
+                  </div>
+                  <div class="icon-box">
+                    <div class="icon-wrapper">
+                      <FontAwesomeIcon icon={faShareAlt} />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

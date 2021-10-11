@@ -3,10 +3,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faFacebookF,
   faInstagram,
   faYoutube,
+  faLine,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -31,10 +34,38 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer">
-        <div className="edition">EDITION TAIWAN</div>
-        <FontAwesomeIcon icon={faFacebookF} className="social-media" />
-        <FontAwesomeIcon icon={faInstagram} className="social-media" />
-        <FontAwesomeIcon icon={faYoutube} className="social-media" />
+        <div className="edition">
+          EDITION
+          <button>
+            TAIWAN
+            <FontAwesomeIcon icon={faAngleDown} size="lg" className="icon" />
+          </button>
+        </div>
+        <div className="dark-gray">
+          <div className="logo">VOGUE</div>
+          <div className="icon">
+            <div class="icon-box">
+              <div class="icon-wrapper">
+                <FontAwesomeIcon icon={faFacebookF} className="social-media" />
+              </div>
+            </div>
+            <div class="icon-box">
+              <div class="icon-wrapper">
+                <FontAwesomeIcon icon={faInstagram} className="social-media" />
+              </div>
+            </div>
+            <div class="icon-box">
+              <div class="icon-wrapper">
+                <FontAwesomeIcon icon={faYoutube} className="social-media" />
+              </div>
+            </div>
+            <div class="icon-box">
+              <div class="icon-wrapper">
+                <FontAwesomeIcon icon={faLine} className="social-media" />
+              </div>
+            </div>
+          </div>
+        </div>
         <div>conde nast taiwan</div>
         <div className="footer-link">
           {info.map((item) => {
