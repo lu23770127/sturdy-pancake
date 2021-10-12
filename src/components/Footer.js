@@ -66,14 +66,22 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div>conde nast taiwan</div>
-        <div className="footer-link">
-          {info.map((item) => {
-            return <div>{item}</div>;
-          })}
-          <div>Cookies</div>
+        <div className="footer-content">
+          <div class="conde-nast">
+            conde nast <p>taiwan</p>
+          </div>
+          <div className="footer-link-group">
+            {info.map((item) => {
+              return (
+                <a href="#" className="footer-link">
+                  {item}
+                </a>
+              );
+            })}
+            <div className="footer-link">Cookies</div>
+          </div>
+          <div className="copyright">© 2021 Condé Nast</div>
         </div>
-        <div className="copyright">© 2021 Condé Nast</div>
       </div>
     </div>
   );

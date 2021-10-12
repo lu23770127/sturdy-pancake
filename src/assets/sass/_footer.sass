@@ -1,11 +1,13 @@
 // _footer.sass
 
 .footer
+
     @extend %link-font
     font-weight: normal
     color: $primary-background-color
     background-color: $darker-gray
-
+    height: auto
+    padding: 0 0 32px 0
     .edition
         padding: 0 76px
         text-align: right
@@ -38,3 +40,36 @@
                 border: 1px solid $primary-background-color
                 &:hover
                     border: 1px solid $secondary-color
+
+    &-content
+
+        text-align: center
+        @extend %link-font
+        font-weight: 100
+
+        .conde-nast
+            @extend %logo-font
+            text-transform: uppercase
+            padding: 16px
+            font-size: 32px
+            p
+                @extend %link-font
+                font-size: 8px
+
+    &-link
+        font-size: 12px
+        margin: 6px 12px
+        display: inline-block
+        color: $primary-background-color
+        text-transform: capitalize
+
+        &-group
+            margin: 16px
+        &:hover
+            color: $dark-gray
+
+    .copyright
+        margin: 48px
+        color: $gray
+        font-size: 11px
+        background-color: $darker-gray
